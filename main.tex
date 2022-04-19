@@ -1,0 +1,83 @@
+\documentclass[UKenglish]{ifimaster}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc,url}
+\urlstyle{sf}
+\usepackage{babel,textcomp,csquotes,duomasterforside,varioref,graphicx}
+\usepackage[backend=biber,style=apa]{biblatex}
+
+% \usepackage[backend=biber,style=numeric-comp]{biblatex} hvis jeg vil bruke APA referansestil
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{textgreek}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{ {./pictures/} }
+
+
+
+% TODO: laste ned APA pakke
+
+\raggedbottom
+
+\title{Interactive meaning-making in a museum context}
+\subtitle{How can one design meaningful interactive experiences in a museum space that addresses sustainability?}
+\author{Silje Marie Flaaten}
+
+
+%name of your bib file(s)
+%\addbibresource{zotero.bib}
+\addbibresource{bibliography.bib}
+%\addbibresource{sample.bib}
+
+
+\begin{document}
+
+\duoforside[dept={Department of Informatics}, program={Informatics: design, use, interaction},long]
+
+
+
+\frontmatter{}
+\chapter*{Acknowledgements}
+\input{chapters/Aim/acknowledgements}
+
+\chapter*{Abstract}
+\input{chapters/Aim/abstract}
+
+\tableofcontents{}
+% \listoffigures{}
+% \listoftables{}
+
+\chapter*{Preface}
+\input{chapters/Aim/preface}
+
+\mainmatter{}
+\part{Aim of study}
+\input{chapters/Aim/aim_of_study}
+
+
+\part{Background}
+\chapter{Museums}
+\input{chapters/Background/museums}
+\chapter{Sustainability}
+\input{chapters/Background/sustainability}
+
+\part{Theory}
+\chapter{Meaningfulness}
+\input{chapters/Theory/meaningfulness}
+\chapter{Discursive perspective}
+\input{chapters/Theory/discursivity}
+\chapter{Hybrid place}
+\input{chapters/Theory/hybrid_place}
+\chapter{Theoretical framework}
+
+\part{The project}
+\chapter{Methods}
+\input{chapters/Project/methods}
+\chapter{Process}
+\input{chapters/Project/process}
+
+\backmatter{}
+\printbibliography
+\end{document}
