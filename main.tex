@@ -12,6 +12,8 @@
 \usepackage{textgreek}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{comment}
+
 \graphicspath{ {./pictures/} }
 
 
@@ -52,7 +54,8 @@
 % \input{chapters/Introduction/preface}
 
 \mainmatter{}
-\part{Aim of study}
+\part{Introduction}
+\chapter{Aim of study}
 \input{chapters/Introduction/aim_of_study}
 
 \part{Background}
@@ -64,15 +67,17 @@
 
 
 \part{Theory}
+
 \input{chapters/Theory/intro}
 \chapter{Hybrid place}
 \input{chapters/Theory/hybrid_place}
 \chapter{Place as a dialogue}
 \input{chapters/Theory/place_as_dialogue}
+
 \chapter{Sense-making}
 \input{chapters/Theory/sense_making}
 \chapter{A new way to design for meaningfulness?}
-\input{chapters/Theory/framework}
+\input{chapters/Theory/meaningfulness}
 
 \part{The project}
 \chapter{Methodology}
@@ -80,14 +85,22 @@
 \chapter{Process diary}
 \input{chapters/Project/process}
 
+\chapter{Analysis}
+\input{chapters/Analysis/analysis}
+
 \chapter{Discussion}
 \input{chapters/Discussion/discussion}
+
+\chapter{Conclusion}
+\input{Conclusion/conclusion}
 
 \backmatter{}
 \printbibliography
 
-%\appendix
-%\chapter{Appendix}
-%\input{appendix/appendix}
+
+
+% \appendix
+% \chapter{Appendix}
+% \input{appendix/appendix}
 
 \end{document}
