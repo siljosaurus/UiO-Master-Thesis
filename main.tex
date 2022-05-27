@@ -4,6 +4,8 @@
 \urlstyle{sf}
 \usepackage{babel,textcomp,csquotes,duomasterforside,varioref,graphicx}
 \usepackage[backend=biber,style=apa]{biblatex}
+\usepackage{pifont}
+
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -30,14 +32,10 @@
 %name of your bib file(s)
 %\addbibresource{zotero.bib}
 \addbibresource{bibliography.bib}
-%\addbibresource{sample.bib}
-
 
 \begin{document}
 
 \duoforside[dept={Department of Informatics}, program={Informatics: design, use, interaction},long]
-
-
 
 \frontmatter{}
 \chapter*{Acknowledgements}
@@ -58,17 +56,17 @@
 \chapter{Aim of study}
 \input{chapters/Introduction/aim_of_study}
 
-\part{Background}
+
 \chapter{Modern museums and sustainability}
 \input{chapters/Background/background}
 
 % \chapter{Narrative theories}
 % \input{chapters/Background/narrative}
 
-
-\part{Theory}
-
+% \part*{\ding{167} \ding{167} \ding{167}}
+% \part{Theory}
 \input{chapters/Theory/intro}
+
 \chapter{Hybrid place}
 \input{chapters/Theory/hybrid_place}
 \chapter{Place as a dialogue}
@@ -76,17 +74,19 @@
 
 \chapter{Sense-making}
 \input{chapters/Theory/sense_making}
-\chapter{A new way to design for meaningfulness?}
+\chapter{A new way of designing for meaningfulness?}
 \input{chapters/Theory/meaningfulness}
 
-\part{The project}
+\part{Design Process}
 \chapter{Methodology}
 \input{chapters/Project/methods}
-\chapter{Process diary}
+\chapter{Design Process}
 \input{chapters/Project/process}
 
+\part{Review/ Evaluation }
 \chapter{Analysis}
 \input{chapters/Analysis/analysis}
+
 
 \chapter{Discussion}
 \input{chapters/Discussion/discussion}
@@ -95,8 +95,12 @@
 \input{Conclusion/conclusion}
 
 \backmatter{}
-\printbibliography
+\printbibliography[nottype=online]
 
+% https://no.overleaf.com/learn/latex/Bibliography_management_in_LaTeX
+
+% \printbibliography[type=article,title={Articles only}]
+ \printbibliography[type=online,title={Web only}]
 
 
 % \appendix
