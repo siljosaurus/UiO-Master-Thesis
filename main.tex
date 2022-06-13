@@ -13,29 +13,32 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{comment}
-
 \graphicspath{ {./pictures/} }
 \raggedbottom
 
-
 \title{Finding meaning in the museum}
-\subtitle{An inquiry of how one can design for meaningful interactive experiences in museums.}
+\subtitle{An inquiry of how one can design meaningful interactive experiences in museums.}
 \author{Silje Marie Flaaten}
 
 \addbibresource{bibliography.bib}
-
-
 \begin{document}
-
 
 \duoforside[dept={Department of Informatics}, program={Informatics: design, use, interaction},long]
 \frontmatter{}
 
+\chapter*{Abstract}
+\input{chapters/Introduction/abstract}
+
+\newpage
+\ % empty page
+\newpage
+
 \chapter*{Acknowledgements}
 \input{chapters/Introduction/acknowledgements}
 
-\chapter*{Abstract}
-\input{chapters/Introduction/abstract}
+\newpage
+\ % empty page
+\newpage
 
 \tableofcontents{}
 \listoffigures{}
@@ -83,8 +86,8 @@
 \printbibliography[nottype=online]
 \printbibliography[type=online,title={Web sources}]
 
-% \appendix
-% \chapter{Appendix}
-% \input{appendix/appendix}
+\appendix
+\chapter{Appendix}
+\input{appendix/appendix}
 
 \end{document}
